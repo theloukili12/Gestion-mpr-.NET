@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F51A0D6-CCC4-418C-B119-6D43A0861363}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gestion_MPR</RootNamespace>
+    <AssemblyName>Gestion_MPR</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet_Impression.cs">
+      <DependentUpon>DataSet_Impression.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet_Impression.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Impression.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Impression_PR_fabRel.cs">
+      <DependentUpon>DataSet_Impression_PR_fabRel.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet_Impression_PR_fabRel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Impression_PR_fabRel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_impression_PR_Relancé.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_impression_PR_Relancé.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ListePrFabPourRelance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ListePrFabPourRelance.Designer.cs">
+      <DependentUpon>Form_ListePrFabPourRelance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ListePRrelancé.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ListePRrelancé.Designer.cs">
+      <DependentUpon>Form_ListePRrelancé.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PiloteSupprimé.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PiloteSupprimé.Designer.cs">
+      <DependentUpon>Form_PiloteSupprimé.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PRsupprimé.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PRsupprimé.Designer.cs">
+      <DependentUpon>Form_PRsupprimé.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RechercheProblemeAvance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RechercheProblemeAvance.Designer.cs">
+      <DependentUpon>Form_RechercheProblemeAvance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RelancePR_MPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RelancePR_MPR.Designer.cs">
+      <DependentUpon>Form_RelancePR_MPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAuthentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAuthentification.Designer.cs">
+      <DependentUpon>FormAuthentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Menu.Designer.cs">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SaisiPRFab_FLUX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SaisiPRFab_FLUX.Designer.cs">
+      <DependentUpon>Form_SaisiPRFab_FLUX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SuivéPRFabr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SuivéPRFabr.Designer.cs">
+      <DependentUpon>Form_SuivéPRFabr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Validation_PRrelancé_FLUX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Validation_PRrelancé_FLUX.Designer.cs">
+      <DependentUpon>Form_Validation_PRrelancé_FLUX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Impression_Liste_Pr_Relancées.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impression_Liste_Pr_Relancées.Designer.cs">
+      <DependentUpon>Impression_Liste_Pr_Relancées.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Impression_PRFabriqué.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impression_PRFabriqué.Designer.cs">
+      <DependentUpon>Impression_PRFabriqué.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Impression_PRRelancé.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impression_PRRelancé.Designer.cs">
+      <DependentUpon>Impression_PRRelancé.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAJ_Piece_Rechange_FLUX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAJ_Piece_Rechange_FLUX.Designer.cs">
+      <DependentUpon>MAJ_Piece_Rechange_FLUX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maj_Pilote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maj_Pilote.Designer.cs">
+      <DependentUpon>Maj_Pilote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Testttt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testttt.Designer.cs">
+      <DependentUpon>Testttt.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form_ListePrFabPourRelance.resx">
+      <DependentUpon>Form_ListePrFabPourRelance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ListePRrelancé.resx">
+      <DependentUpon>Form_ListePRrelancé.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PiloteSupprimé.resx">
+      <DependentUpon>Form_PiloteSupprimé.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PRsupprimé.resx">
+      <DependentUpon>Form_PRsupprimé.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RechercheProblemeAvance.resx">
+      <DependentUpon>Form_RechercheProblemeAvance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RelancePR_MPR.resx">
+      <DependentUpon>Form_RelancePR_MPR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAuthentification.resx">
+      <DependentUpon>FormAuthentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Menu.resx">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SaisiPRFab_FLUX.resx">
+      <DependentUpon>Form_SaisiPRFab_FLUX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SuivéPRFabr.resx">
+      <DependentUpon>Form_SuivéPRFabr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Validation_PRrelancé_FLUX.resx">
+      <DependentUpon>Form_Validation_PRrelancé_FLUX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Impression_Liste_Pr_Relancées.resx">
+      <DependentUpon>Impression_Liste_Pr_Relancées.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Impression_PRFabriqué.resx">
+      <DependentUpon>Impression_PRFabriqué.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Impression_PRRelancé.resx">
+      <DependentUpon>Impression_PRRelancé.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAJ_Piece_Rechange_FLUX.resx">
+      <DependentUpon>MAJ_Piece_Rechange_FLUX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maj_Pilote.resx">
+      <DependentUpon>Maj_Pilote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report_Histogramme_PR_Fabriqué.rdlc" />
+    <EmbeddedResource Include="Report_Liste_PR_Relancé.rdlc" />
+    <EmbeddedResource Include="Report_Liste_PR_Relancées.rdlc" />
+    <EmbeddedResource Include="Report_test.rdlc" />
+    <EmbeddedResource Include="Testttt.resx">
+      <DependentUpon>Testttt.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet_Impression.xsc">
+      <DependentUpon>DataSet_Impression.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Impression.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Impression.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Impression.xss">
+      <DependentUpon>DataSet_Impression.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Impression_PR_fabRel.xsc">
+      <DependentUpon>DataSet_Impression_PR_fabRel.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Impression_PR_fabRel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Impression_PR_fabRel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Impression_PR_fabRel.xss">
+      <DependentUpon>DataSet_Impression_PR_fabRel.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_impression_PR_Relancé.xsc">
+      <DependentUpon>DataSet_impression_PR_Relancé.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_impression_PR_Relancé.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_impression_PR_Relancé.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_impression_PR_Relancé.xss">
+      <DependentUpon>DataSet_impression_PR_Relancé.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\2000px-Renault_2009_logo.svg.png" />
+    <Content Include="Images\2000px-Renault_2009_logoakznfaz.png" />
+    <Content Include="Images\666713-a.jpg" />
+    <Content Include="Images\Page.png" />
+    <Content Include="Images\photo arienne de lusine renault-nissan de tanger.jpg" />
+    <Content Include="Images\renault-600.jpg" />
+    <Content Include="Images\renault-new-logo-2015-L.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
